@@ -7,7 +7,7 @@ import com.onfido.android.sdk.capture.ui.camera.face.stepbuilder.FaceCaptureStep
 import com.onfido.android.sdk.capture.ui.camera.face.stepbuilder.MotionCaptureStepBuilder
 import com.onfido.android.sdk.capture.ui.options.FlowStep
 import com.onfido.android.sdk.capture.ui.options.stepbuilder.DocumentCaptureStepBuilder
-import com.onfido.sdk.flutter.helpers.CustomMediaCallback
+//import com.onfido.sdk.flutter.helpers.CustomMediaCallback
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 
 internal fun Any?.deserializeOnfidoBuilder(
@@ -99,7 +99,7 @@ internal fun Any?.deserializeOnfidoBuilder(
 
     val withMediaCallback = this["shouldUseMediaCallback"] as? Boolean ?: false
     if (withMediaCallback) {
-        builder.withMediaCallback(mediaCallback = CustomMediaCallback())
+//        builder.withMediaCallback(mediaCallback = CustomMediaCallback())
     }
     val theme = this["onfidoTheme"] as? String
     if (theme != null) {

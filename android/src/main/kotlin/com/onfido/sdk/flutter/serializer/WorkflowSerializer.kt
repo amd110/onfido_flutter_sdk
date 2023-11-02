@@ -2,7 +2,7 @@ package com.onfido.sdk.flutter.serializer
 
 import com.onfido.workflow.WorkflowConfig
 import com.onfido.android.sdk.capture.EnterpriseFeatures
-import com.onfido.sdk.flutter.helpers.CustomMediaCallback
+//import com.onfido.sdk.flutter.helpers.CustomMediaCallback
 
 fun Any.deserializeWorkflowConfig(): WorkflowConfig {
     if (this !is Map<*, *>) throw Exception("Invalid arguments for start method")
@@ -17,7 +17,7 @@ fun Any.deserializeWorkflowConfig(): WorkflowConfig {
 
     val withMediaCallback = this["shouldUseMediaCallback"] as? Boolean ?: false
     if (withMediaCallback) {
-        builder.withMediaCallback(mediaCallback = CustomMediaCallback())
+//        builder.withMediaCallback(mediaCallback = CustomMediaCallback())
     }
 
     val enterpriseFeatures = this["enterpriseFeatures"] as? Map<*, *>
