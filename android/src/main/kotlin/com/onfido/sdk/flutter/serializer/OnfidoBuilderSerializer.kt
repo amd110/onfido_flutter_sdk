@@ -103,7 +103,7 @@ internal fun Any?.deserializeOnfidoBuilder(
     }
     val theme = this["onfidoTheme"] as? String
     if (theme != null) {
-        builder.withTheme(getTheme(theme))
+//        builder.withTheme(getTheme(theme))
     }
     return builder
 }
