@@ -94,7 +94,7 @@ internal fun Any?.deserializeOnfidoBuilder(
     builder.withEnterpriseFeatures(features)
 
     if (this["disableNFC"] as? Boolean == true) {
-        builder.disableNFC()
+//        builder.disableNFC()
     }
 
     val withMediaCallback = this["shouldUseMediaCallback"] as? Boolean ?: false
